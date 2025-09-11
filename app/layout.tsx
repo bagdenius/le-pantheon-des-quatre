@@ -12,22 +12,25 @@ export const cormorantGaramond = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - NOTTE STELLATA',
-    default: 'welcome - notte stellata',
+    template: '%s - Le Panthéon des Quatre',
+    default: 'Le Panthéon des Quatre – French Luxury Restaurant in Paris',
   },
   description:
-    'Discover Notte Stellata, a luxury French fine dining restaurant where timeless elegance meets culinary artistry. Indulge in exquisite dishes, curated wines, and an unforgettable starry-night atmosphere.',
+    'Discover Le Panthéon des Quatre, a French luxury restaurant inspired by mythology and art. Explore four divine halls — Nyx, Hera, Hygieia, and Thalia — each offering a unique atmosphere and exquisite dining experience. Reserve your table or enjoy our new delivery service, brought by Hermes.',
   keywords: [
-    'Notte Stellata restaurant',
-    'luxury French dining',
-    'fine dining experience',
-    'gourmet French cuisine',
-    'French restaurant',
-    'romantic dinner restaurant',
-    'wine and fine dining',
-    'upscale French cuisine',
-    'best luxury restaurant',
-    'starry night dining',
+    'luxury restaurant Paris',
+    'French fine dining',
+    'mythological restaurant',
+    'Nyx Hall',
+    'Hera Hall',
+    'Hygieia Hall',
+    'Thalia Hall',
+    'Le Panthéon des Quatre',
+    'gourmet dining',
+    'artistic restaurant',
+    'elegant halls',
+    'Hermes delivery',
+    'haute cuisine Paris',
   ],
 };
 
@@ -37,12 +40,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
+    <html
+      lang='en'
+      className='selection:bg-secondary selection:text-primary-extradark  focus:outline-none focus:border-none focus:ring-8 focus:ring-primary'
+    >
       <body
         className={`${cormorantGaramond.className} flex flex-col min-h-dvh max-w-dvw text-base text-primary-extradark`}
       >
         <Header />
-        <main className='pt-20'>{children}</main>
+        <main className='pt-[var(--height-header)]'>{children}</main>
         <Footer />
       </body>
     </html>

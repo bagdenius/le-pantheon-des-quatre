@@ -1,17 +1,15 @@
 import Link from 'next/link';
 import React from 'react';
-import NotteStellataLogo from '@/app/icon.svg';
 
 export default function Logo() {
   return (
     <Link
       href='/'
-      className='flex items-center text-nowrap gap-2 text-4xl font-normal uppercase tracking-tight hover:text-secondary hover:brightness-110 hover:scale-y-115 transition-all'
+      className='flex items-center text-nowrap gap-2 text-4xl font-normal tracking-tight hover:text-secondary hover:brightness-110 hover:scale-y-115 transition-all text'
     >
-      {/* <NotteStellataLogo className='size-8 fill-current stroke-current' /> */}
       <span>
-        {/* <span className='text-6xl leading-0 text-secondary'>&#10086;</span> */}
-        &#x2015; Notte Stellata &#x2015;
+        &#x2015; <span className='italic'>Le</span> PANTHÉON{' '}
+        <span className='italic'>des</span> QUATRE &#x2015;
       </span>
     </Link>
   );

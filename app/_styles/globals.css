@@ -1,14 +1,52 @@
 @import 'tailwindcss';
 
 @theme {
-  /* #a5abbd #776952*/
+  /* color */
   --color-primary-extralight: #e0e1dd;
   --color-primary-light: #778da9;
   --color-primary: #415a77;
-  --color-primary-dark: #1b263b;
+  --color-primary-dark: #1b263b; /* maybe switch to 63% brightness */
   --color-primary-extradark: #0d1b2a;
 
   --color-secondary: #776952;
 
   --color-gray-light: #a5abbd;
+
+  /* height */
+  --height-header: 5rem;
+  --height-hero: calc(100dvh - var(--height-header));
+
+  /* background */
+  --background-image-hero: linear-gradient(
+      rgba(27 38 59 / 0.6) 85%,
+      rgba(27 38 59 / 1)
+    ),
+    url('/img/interior-nyx-1.jpg');
+
+  /* animations */
+  --animate-pulsate: pulsate 1s infinite;
+}
+
+.test {
+  color: rgb(119, 105, 82);
+}
+
+*:focus {
+  @apply border-none outline-none;
+  box-shadow: 0 0 0.5rem 0.75rem rgba(119 105 82 / 0.6);
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 1rem 4rem rgba(#000, 0.25);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
 }
