@@ -1,7 +1,9 @@
 {
-  "name": "notte-stellata",
+  "name": "le-pantheon-des-quatre",
   "version": "0.1.0",
   "private": true,
+  "author": "bagdenius",
+  "repository": "https://github.com/bagdenius/le-pantheon-des-quatre",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
