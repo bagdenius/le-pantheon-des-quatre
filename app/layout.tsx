@@ -1,14 +1,11 @@
 import type { Metadata } from 'next';
-import '@/app/_styles/globals.css';
+import { ReactNode } from 'react';
+
 import Header from './_components/Header';
 import Footer from './_components/Footer';
-import { Cormorant_Garamond } from 'next/font/google';
 
-export const cormorantGaramond = Cormorant_Garamond({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  display: 'swap',
-});
+import { cormorantGaramond } from './fonts';
+import '@/app/_styles/globals.css';
 
 export const metadata: Metadata = {
   title: {
@@ -37,7 +34,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html
