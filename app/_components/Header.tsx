@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from './Logo';
 import Navigation from './Navigation';
-import MobileNavigation from './MobileNavigationButton';
+import MobileNavigation from './MobileNavigation';
 
 export default function Header() {
   return (

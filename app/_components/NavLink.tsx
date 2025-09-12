@@ -8,7 +8,7 @@ export default function NavLink({
 }: {
   children: ReactNode;
   href: string;
-  onClick: () => void;
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>;
 }) {
   return (
     <li className='hover:text-secondary hover:scale-115 transition-all duration-200'>
