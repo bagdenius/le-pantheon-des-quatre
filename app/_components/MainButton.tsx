@@ -10,7 +10,7 @@ export default function MainButton({
 }) {
   return (
     <Link
-      className='px-8 py-4 bg-secondary uppercase font-normal text-primary-extradark text-3xl text-shadow-md hover:brightness-120 hover:-translate-y-0.5 hover:shadow-xl active:-translate-y-0 active:shadow-none transition-all duration-100'
+      className='text-center px-8 py-4 bg-secondary uppercase font-normal text-primary-extradark text-3xl text-shadow-md hover:brightness-120 hover:-translate-y-0.5 hover:shadow-xl active:-translate-y-0 active:shadow-none transition-all duration-100 sm:px-4 sm:py-4'
       href={href}
     >
       {children}

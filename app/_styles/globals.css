@@ -1,6 +1,8 @@
 @import 'tailwindcss';
 
 @theme {
+  --breakpoint-*: initial;
+
   /* color */
   --color-primary-extralight: #e0e1dd;
   --color-primary-light: #778da9;
@@ -23,13 +25,26 @@
     ),
     url('/img/interior-nyx-1.jpg');
 
+  --background-image-mobile-nav: radial-gradient(
+    var(--color-primary-dark),
+    var(--color-primary-extradark)
+  );
+
   /* animations */
   --animate-pulsate: pulsate 1s infinite;
 }
 
 .test {
-  color: rgb(119, 105, 82);
+  color: rgb(27, 38, 59);
 }
+
+/* breakpoints (desktop-first) */
+@custom-variant 2xl (@media (max-width: 92.5em)); /* 1480px */
+@custom-variant xl (@media (max-width: 80em)); /* 1280px */
+@custom-variant lg (@media (max-width: 62.5em)); /* 1000px */
+@custom-variant md (@media (max-width: 50em)); /* 800px */
+@custom-variant sm (@media (max-width: 37.5em)); /* 600px */
+@custom-variant xs (@media (max-width: 31.25em)); /* 500px */
 
 *:focus {
   @apply border-none outline-none;

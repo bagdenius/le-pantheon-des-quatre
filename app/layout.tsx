@@ -39,13 +39,13 @@ export default function RootLayout({
   return (
     <html
       lang='en'
-      className='selection:bg-secondary selection:text-primary-extradark  focus:outline-none focus:border-none focus:ring-8 focus:ring-primary'
+      className='selection:bg-secondary selection:text-primary-extradark  focus:outline-none focus:border-none focus:ring-8 focus:ring-primary xl:text-sm lg:text-xs md:text-[0.625rem] sm:text-[0.625rem]'
     >
       <body
         className={`${cormorantGaramond.className} flex flex-col min-h-dvh max-w-dvw text-base text-primary-extradark`}
       >
         <Header />
-        <main className='pt-[var(--height-header)]'>{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
