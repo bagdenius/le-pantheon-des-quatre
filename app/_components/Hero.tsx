@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function Hero() {
   return (
     <section
-      className={`relative h-hero px-25 flex flex-col justify-center items-start bg-hero bg-cover bg-center text-gray-light text-4xl xl:px-20 md:px-15 sm:px-10 xs:px-5`}
+      className={`relative h-hero px-25 flex flex-col justify-center items-start bg-hero bg-cover bg-center text-gray-light text-4xl xl:px-20 md:px-15 sm:px-10 xs:px-5 `}
     >
       <h1 className='mb-[2dvw] text-[5rem] font-bold text-secondary leading-20 text-shadow-lg text-shadow-black hover:scale-102 transition-all 2xl:text-7xl xs:text-center xs:text-6xl xs:basis-1/4'>
         Where Myth and Gastronomy Unite
@@ -15,7 +15,7 @@ export default function Hero() {
         mastery converge. Each hall of Le Panthéon des Quatre offers a unique
         dining journey inspired by gods, goddesses, and timeless artistry.
       </p>
-      <div className='flex gap-12 sm:justify-between'>
+      <div className='flex gap-12'>
         <MainButton href='/reservation'>Reserve Table</MainButton>
         <MainButton href='/halls'>Discover Our Halls</MainButton>
       </div>

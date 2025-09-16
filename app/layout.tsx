@@ -42,7 +42,7 @@ export default function RootLayout({
       className='selection:bg-secondary selection:text-primary-extradark  focus:outline-none focus:border-none focus:ring-8 focus:ring-primary xl:text-sm lg:text-xs md:text-[0.625rem] sm:text-[0.625rem]'
     >
       <body
-        className={`${cormorantGaramond.className} flex flex-col min-h-dvh max-w-dvw text-base text-primary-extradark`}
+        className={`${cormorantGaramond.className} flex flex-col min-h-dvh max-w-dvw text-base text-primary-extradark bg-gray-light`}
       >
         <Header />
         <main>{children}</main>

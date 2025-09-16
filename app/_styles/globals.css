@@ -20,7 +20,7 @@
 
   /* background */
   --background-image-hero: linear-gradient(
-      rgba(27 38 59 / 0.6) 85%,
+      rgba(27 38 59 / 0.5) 85%,
       rgba(27 38 59 / 1)
     ),
     url('/img/interior-nyx-1.jpg');
@@ -39,29 +39,59 @@
 }
 
 /* breakpoints (desktop-first) */
+@custom-variant 3xl (@media (max-width: 112.5em)); /* 1800px */
 @custom-variant 2xl (@media (max-width: 92.5em)); /* 1480px */
 @custom-variant xl (@media (max-width: 80em)); /* 1280px */
 @custom-variant lg (@media (max-width: 62.5em)); /* 1000px */
 @custom-variant md (@media (max-width: 50em)); /* 800px */
 @custom-variant sm (@media (max-width: 37.5em)); /* 600px */
 @custom-variant xs (@media (max-width: 31.25em)); /* 500px */
+@custom-variant 2xs (@media (max-width: 25em)); /* 400px */
 
 *:focus {
   @apply border-none outline-none;
   box-shadow: 0 0 0.5rem 0.75rem rgba(119 105 82 / 0.6);
 }
 
-@keyframes pulsate {
-  0% {
-    transform: scale(1);
-    box-shadow: none;
+@layer components {
+  .spinner {
+    margin: 3.2rem auto 1.6rem;
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid theme('colors.primary.extradark');
+    border-right-color: theme('colors.gray.light');
+    animation: rotate 1s infinite linear;
   }
-  50% {
-    transform: scale(1.1);
-    box-shadow: 0 1rem 4rem rgba(#000, 0.25);
+
+  .spinner-mini {
+    margin: 0;
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 2px solid theme('colors.gray.light');
+    border-right-color: transparent;
+    animation: rotate 1s infinite linear;
   }
-  100% {
-    transform: scale(1);
-    box-shadow: none;
+
+  @keyframes rotate {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+
+  @keyframes pulsate {
+    0% {
+      transform: scale(1);
+      box-shadow: none;
+    }
+    50% {
+      transform: scale(1.1);
+      box-shadow: 0 1rem 4rem rgba(#000, 0.25);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: none;
+    }
   }
 }

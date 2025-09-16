@@ -8,11 +8,9 @@ export default function MobileNavigation() {
   const handleClose = () => setIsOpen(false);
 
   return (
-    // navigation
     <div className='relative hidden w-18 h-18 justify-center items-center md:flex'>
       {/* navigation button */}
-      <label
-        htmlFor='navigation-toggle'
+      <div
         className='fixed top-1 right-10 w-18 h-18 text-center z-2000 cursor-pointer sm:right-6'
         onClick={() => setIsOpen((prev) => !prev)}
       >
@@ -36,7 +34,7 @@ export default function MobileNavigation() {
             &nbsp;
           </span>
         </span>
-      </label>
+      </div>
       {/* navigation background */}
       <div
         className={`fixed top-1 right-10 w-18 h-18 rounded-full bg-mobile-nav transition-transform duration-700 ease-[cubic-bezier(0.86,0,0.07,1)] z-1000 ${
@@ -67,6 +65,9 @@ export default function MobileNavigation() {
           </NavLink>
           <NavLink href='/order' onClick={handleClose}>
             Order
+          </NavLink>
+          <NavLink href='/reservation' onClick={handleClose}>
+            Reservation
           </NavLink>
           <NavLink href='/account' onClick={handleClose}>
             Account
