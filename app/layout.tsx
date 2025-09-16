@@ -45,7 +45,7 @@ export default function RootLayout({
         className={`${cormorantGaramond.className} flex flex-col min-h-dvh max-w-dvw text-base text-primary-extradark bg-gray-light`}
       >
         <Header />
-        <main>{children}</main>
+        <main className='pt-[var(--height-header)]'>{children}</main>
         <Footer />
       </body>
     </html>

@@ -5,7 +5,8 @@ import Link from 'next/link';
 export default function Hero() {
   return (
     <section
-      className={`relative h-hero px-25 flex flex-col justify-center items-start bg-hero bg-cover bg-center text-gray-light text-4xl xl:px-20 md:px-15 sm:px-10 xs:px-5 `}
+      id='hero'
+      className={`relative h-hero px-25 flex flex-col justify-center items-start bg-hero bg-cover bg-center text-gray-light text-4xl xl:px-20 md:px-15 sm:px-10 xs:px-5`}
     >
       <h1 className='mb-[2dvw] text-[5rem] font-bold text-secondary leading-20 text-shadow-lg text-shadow-black hover:scale-102 transition-all 2xl:text-7xl xs:text-center xs:text-6xl xs:basis-1/4'>
         Where Myth and Gastronomy Unite

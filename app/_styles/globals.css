@@ -35,7 +35,8 @@
 }
 
 .test {
-  color: rgb(27, 38, 59);
+  color: rgba(165, 171, 189, 0.8);
+  color: #a5abbde1;
 }
 
 /* breakpoints (desktop-first) */
