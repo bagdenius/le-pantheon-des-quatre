@@ -17,7 +17,7 @@
 
   /* height */
   --height-header: 5rem;
-  --height-hero: calc(100vh - var(--height-header));
+  --height-hero: calc(100lvh - var(--height-header));
 
   /* background */
   --background-image-hero: linear-gradient(

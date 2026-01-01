@@ -34,10 +34,10 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 w-full h-header flex justify-between items-center px-10 z-100 text-2xl xs:px-6 ${
+      className={`fixed top-0 w-full h-header flex justify-between items-center px-10 backdrop-blur-sm border-b z-100 text-2xl xs:px-6 ${
         scrolled
-          ? 'bg-gray-light/70 backdrop-blur-sm border-b'
-          : 'bg-primary-extradark text-gray-light'
+          ? 'bg-gray-light/70'
+          : 'bg-primary-extradark/75 text-gray-light border-primary-extradark'
       }`}
     >
       <Logo />

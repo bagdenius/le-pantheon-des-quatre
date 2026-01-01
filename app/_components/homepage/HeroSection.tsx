@@ -10,7 +10,7 @@ export default function HeroSection() {
   return (
     <section
       id='hero'
-      className={`relative h-hero px-25 flex flex-col justify-center items-start text-gray-light text-4xl xl:px-20 md:px-15 sm:px-10 xs:px-5`}
+      className={`relative h-lvh px-25 flex flex-col justify-center items-start text-gray-light text-4xl xl:px-20 md:px-15 sm:px-10 xs:px-5`}
     >
       <Image
         src={heroImage}
