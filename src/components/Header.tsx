@@ -1,5 +1,7 @@
 'use client';
+
 import React, { useEffect, useState } from 'react';
+
 import Logo from '@/src/components/Logo';
 import Navigation from '@/src/components/Navigation';
 import MobileNavigation from '@/src/components/MobileNavigation';
@@ -8,6 +10,7 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [heroHeight, setHeroHeight] = useState(0);
 
+  // TODO: update hero mod on scroll. It should not rely on hero and it's own height
   useEffect(() => {
     const updateHeroHeight = () => {
       const hero = document.querySelector<HTMLElement>('#hero');
@@ -15,7 +18,7 @@ export default function Header() {
     };
 
     const handleScroll = () => {
-      setScrolled(heroHeight ? window.scrollY > heroHeight : true);
+      setScrolled(heroHeight ? window.scrollY >= heroHeight - 80 : true);
     };
 
     // initial measure
@@ -34,7 +37,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 w-full h-header flex justify-between items-center px-10 backdrop-blur-sm border-b z-100 text-2xl xs:px-6 ${
+      className={`fixed w-full h-header flex justify-between items-center px-10 backdrop-blur-sm border-b z-100 text-2xl xs:px-6 ${
         scrolled
           ? 'bg-gray-light/70'
           : 'bg-primary-extradark/75 text-gray-light border-primary-extradark'
