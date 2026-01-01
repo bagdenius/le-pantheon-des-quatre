@@ -1,13 +1,40 @@
 import React from 'react';
-import MainButton from './MainButton';
 import Link from 'next/link';
+import Image from 'next/image';
 
-export default function Hero() {
+import MainButton from '../reusable/MainButton';
+
+import heroImage from '@/public/img/interior-nyx-1.jpg';
+
+export default function HeroSection() {
   return (
+    // <section
+    //   id='hero'
+    //   className={`relative h-hero px-25 flex flex-col justify-center items-start bg-hero bg-cover bg-center text-gray-light text-4xl xl:px-20 md:px-15 sm:px-10 xs:px-5`}
+    // >
     <section
       id='hero'
-      className={`relative h-hero px-25 flex flex-col justify-center items-start bg-hero bg-cover bg-center text-gray-light text-4xl xl:px-20 md:px-15 sm:px-10 xs:px-5`}
+      className={`relative h-hero px-25 flex flex-col justify-center items-start text-gray-light text-4xl xl:px-20 md:px-15 sm:px-10 xs:px-5`}
     >
+      <Image
+        src={heroImage}
+        fill
+        className='object-cover object-center -z-10'
+        placeholder='blur'
+        alt='NYX Hall interior'
+        priority
+      />
+      <div
+        className='absolute inset-0 -z-1'
+        style={{
+          backgroundImage: `
+        linear-gradient(
+          rgba(27, 38, 59, 0.5) 85%,
+          rgba(27, 38, 59, 1)
+        )
+      `,
+        }}
+      />
       <h1 className='mb-[2dvw] text-[5rem] font-bold text-secondary leading-20 text-shadow-lg text-shadow-black hover:scale-102 transition-all 2xl:text-7xl xs:text-center xs:text-6xl xs:basis-1/4'>
         Where Myth and Gastronomy Unite
       </h1>

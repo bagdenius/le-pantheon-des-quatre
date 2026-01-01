@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { ReactNode } from 'react';
 
-import Header from './_components/Header';
-import Footer from './_components/Footer';
+import Header from '@/app/_components/reusable/Header';
+import Footer from '@/app/_components/reusable/Footer';
 
 import { cormorantGaramond } from './fonts';
 import '@/app/_styles/globals.css';

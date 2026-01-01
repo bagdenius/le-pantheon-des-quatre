@@ -1,14 +1,16 @@
 import Image from 'next/image';
 import React from 'react';
+
+import SecondaryButton from '../reusable/SecondaryButton';
+
 import detailsImg1 from '@/public/img/details-3.jpg';
 import detailsImg2 from '@/public/img/details-1.jpg';
 import detailsImg3 from '@/public/img/details-2.jpg';
 import detailsImg4 from '@/public/img/details-4.jpg';
 import exteriorImg1 from '@/public/img/exterior-2.png';
 import exteriorImg2 from '@/public/img/exterior-3.jpg';
-import SecondaryButton from './SecondaryButton';
 
-export default function About() {
+export default function AboutSection() {
   return (
     <section className='snap-start px-10 py-20 bg-gray-light text-primary-dark text-lg'>
       <h2 className='text-center text-6xl mb-2'>A Temple of Gastronomy</h2>
@@ -22,46 +24,58 @@ export default function About() {
         every dish becomes part of a legend.
       </p>
       <div className='grid grid-cols-4 grid-rows-3 h-[42rem] gap-4 mb-15'>
-        <figure className='flex-1 relative transition-transform    hover:scale-110 hover:outline-8 hover:z-10 hover:shadow-xl'>
+        <figure className='relative transition-transform    hover:scale-110 hover:outline-8 hover:z-10 hover:shadow-xl'>
           <Image
-            className='block size-full object-cover '
+            fill
             src={exteriorImg1}
-            alt='exterior 1'
+            placeholder='blur'
+            alt='Le PANTHÉON des QUATRE exterior 1'
+            quality={1}
           />
         </figure>
-        <figure className='flex-1 relative row-span-3 transition-transform    hover:scale-110 hover:outline-8 hover:z-10 hover:shadow-xl'>
+        <figure className='relative row-span-3 transition-transform    hover:scale-110 hover:outline-8 hover:z-10 hover:shadow-xl'>
           <Image
             className='block size-full object-cover'
             src={detailsImg1}
-            alt='details 1'
+            placeholder='blur'
+            alt='Le PANTHÉON des QUATRE details 1'
+            quality={1}
           />
         </figure>
-        <figure className='flex-1 relative row-span-3 transition-transform    hover:scale-110 hover:outline-8 hover:z-10 hover:shadow-xl'>
+        <figure className='relative row-span-3 transition-transform    hover:scale-110 hover:outline-8 hover:z-10 hover:shadow-xl'>
           <Image
             className='block size-full object-cover'
             src={detailsImg2}
-            alt='details 2'
+            placeholder='blur'
+            alt='Le PANTHÉON des QUATRE details 2'
+            quality={1}
           />
         </figure>
-        <figure className='flex-1 relative row-span-3 transition-transform    hover:scale-110 hover:outline-8 hover:z-10 hover:shadow-xl'>
+        <figure className='relative row-span-3 transition-transform    hover:scale-110 hover:outline-8 hover:z-10 hover:shadow-xl'>
           <Image
             className='block size-full object-cover'
             src={detailsImg3}
-            alt='details 3'
+            placeholder='blur'
+            alt='Le PANTHÉON des QUATRE details 3'
+            quality={1}
           />
         </figure>
-        <figure className='flex-1 relative transition-transform    hover:scale-110 hover:outline-8 hover:z-10 hover:shadow-xl'>
+        <figure className='relative transition-transform    hover:scale-110 hover:outline-8 hover:z-10 hover:shadow-xl'>
           <Image
             className='block size-full object-cover'
             src={detailsImg4}
-            alt='details 4'
+            placeholder='blur'
+            alt='Le PANTHÉON des QUATRE details 4'
+            quality={1}
           />
         </figure>
-        <figure className='flex-1 relative transition-transform    hover:scale-110 hover:outline-8 hover:z-10 hover:shadow-xl'>
+        <figure className='relative transition-transform    hover:scale-110 hover:outline-8 hover:z-10 hover:shadow-xl'>
           <Image
             className='block size-full object-cover'
             src={exteriorImg2}
-            alt='exterior 2'
+            placeholder='blur'
+            alt='Le PANTHÉON des QUATRE exterior 2'
+            quality={1}
           />
         </figure>
       </div>
