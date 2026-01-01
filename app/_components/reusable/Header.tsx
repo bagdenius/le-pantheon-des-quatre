@@ -15,7 +15,7 @@ export default function Header() {
     };
 
     const handleScroll = () => {
-      setScrolled(window.scrollY > heroHeight);
+      setScrolled(heroHeight ? window.scrollY > heroHeight : true);
     };
 
     // initial measure

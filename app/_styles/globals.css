@@ -50,9 +50,10 @@
 @custom-variant xs (@media (max-width: 31.25em)); /* 500px */
 @custom-variant 2xs (@media (max-width: 25em)); /* 400px */
 
-*:focus {
-  @apply border-none outline-none;
-  box-shadow: 0 0 0.5rem 0.75rem rgba(119 105 82 / 0.6);
+:focus-visible {
+  outline: 0.5rem solid var(--color-primary);
+  outline-offset: 0.4rem;
+  border-radius: 4px;
 }
 
 @layer components {
