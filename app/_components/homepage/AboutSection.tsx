@@ -27,6 +27,7 @@ export default function AboutSection() {
         <figure className='relative transition-transform    hover:scale-110 hover:outline-8 hover:z-10 hover:shadow-xl'>
           <Image
             fill
+            className='block size-full object-cover'
             src={exteriorImg1}
             placeholder='blur'
             alt='Le PANTHÉON des QUATRE exterior 1'
@@ -35,6 +36,7 @@ export default function AboutSection() {
         </figure>
         <figure className='relative row-span-3 transition-transform    hover:scale-110 hover:outline-8 hover:z-10 hover:shadow-xl'>
           <Image
+            fill
             className='block size-full object-cover'
             src={detailsImg1}
             placeholder='blur'
@@ -44,6 +46,7 @@ export default function AboutSection() {
         </figure>
         <figure className='relative row-span-3 transition-transform    hover:scale-110 hover:outline-8 hover:z-10 hover:shadow-xl'>
           <Image
+            fill
             className='block size-full object-cover'
             src={detailsImg2}
             placeholder='blur'
@@ -53,6 +56,7 @@ export default function AboutSection() {
         </figure>
         <figure className='relative row-span-3 transition-transform    hover:scale-110 hover:outline-8 hover:z-10 hover:shadow-xl'>
           <Image
+            fill
             className='block size-full object-cover'
             src={detailsImg3}
             placeholder='blur'
@@ -62,6 +66,7 @@ export default function AboutSection() {
         </figure>
         <figure className='relative transition-transform    hover:scale-110 hover:outline-8 hover:z-10 hover:shadow-xl'>
           <Image
+            fill
             className='block size-full object-cover'
             src={detailsImg4}
             placeholder='blur'
@@ -71,6 +76,7 @@ export default function AboutSection() {
         </figure>
         <figure className='relative transition-transform    hover:scale-110 hover:outline-8 hover:z-10 hover:shadow-xl'>
           <Image
+            fill
             className='block size-full object-cover'
             src={exteriorImg2}
             placeholder='blur'
