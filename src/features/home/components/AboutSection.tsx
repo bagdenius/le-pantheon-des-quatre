@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-import SecondaryButton from '../reusable/SecondaryButton';
+import SecondaryButton from '@/src/components/SecondaryButton';
 
 import detailsImg1 from '@/public/img/details-3.jpg';
 import detailsImg2 from '@/public/img/details-1.jpg';

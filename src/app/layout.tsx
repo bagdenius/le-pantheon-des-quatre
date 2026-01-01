@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import { ReactNode } from 'react';
 
-import Header from '@/app/_components/reusable/Header';
-import Footer from '@/app/_components/reusable/Footer';
+import Header from '@/src/components/Header';
+import Footer from '@/src/components/Footer';
 
-import { cormorantGaramond } from './fonts';
-import '@/app/_styles/globals.css';
+import { cormorantGaramond } from '@/public/fonts';
+import '@/src/styles/globals.css';
 
 export const metadata: Metadata = {
   title: {

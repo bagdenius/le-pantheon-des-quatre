@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import MainButton from '../reusable/MainButton';
+import MainButton from '@/src/components/MainButton';
 
 import heroImage from '@/public/img/interior-nyx-1.jpg';
 
